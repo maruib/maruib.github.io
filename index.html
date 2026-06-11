@@ -39,7 +39,22 @@
     header {
       padding: 64px 0 48px;
       border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
     }
+
+    .header-photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      margin-top: 4px;
+      border: 1px solid var(--rule);
+    }
+
+    .header-text { flex: 1; }
 
     .name {
       font-family: var(--serif);
@@ -174,7 +189,8 @@
     }
 
     @media (max-width: 480px) {
-      header { padding: 40px 0 32px; }
+      header { padding: 40px 0 32px; flex-direction: column; gap: 20px; }
+      .header-photo { width: 80px; height: 80px; }
       .section { padding: 36px 0; }
       nav a { margin-right: 16px; }
     }
@@ -185,11 +201,14 @@
 <div class="wrap">
 
   <header>
-    <h1 class="name">Maria-del-Mar <em>Vich</em></h1>
-    <p class="tagline">
-      Ph.D · Researcher, <a href="https://meteo.uib.es/" target="_blank">UIB Meteorology Group</a>, Spain
-      &nbsp;·&nbsp; <a href="mailto:mar.vich@uib.es">mar.vich@uib.es</a>
-    </p>
+    <img src="foto.jpg" alt="Maria-del-Mar Vich" class="header-photo">
+    <div class="header-text">
+      <h1 class="name">Maria-del-Mar <em>Vich</em></h1>
+      <p class="tagline">
+        Ph.D · Researcher, <a href="https://meteo.uib.es/" target="_blank">UIB Meteorology Group</a>, Spain
+        &nbsp;·&nbsp; <a href="mailto:mar.vich@uib.es">mar.vich@uib.es</a>
+      </p>
+    </div>
   </header>
 
   <nav>
