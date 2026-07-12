@@ -99,6 +99,7 @@
       color: var(--ink-light);
       text-decoration: none;
       margin-right: 24px;
+      margin-bottom: 4px;
     }
     nav a:hover { color: var(--accent); }
 
@@ -228,6 +229,14 @@
     }
     .item a:hover { border-color: var(--accent); }
 
+    /* ── Reviewer list ── */
+    .reviewer-list {
+      font-size: 0.93rem;
+      color: var(--ink-light);
+      line-height: 1.8;
+    }
+    .reviewer-list em { color: var(--ink); font-style: italic; }
+
     /* ── Profiles ── */
     .profiles {
       display: flex;
@@ -288,7 +297,11 @@
     <a href="#projects">Projects</a>
     <a href="#teaching">Teaching</a>
     <a href="#supervision">Supervision</a>
+    <a href="#stays">Research stays</a>
+    <a href="#awards">Awards</a>
     <a href="#outreach">Outreach</a>
+    <a href="#training">Training</a>
+    <a href="#reviewer">Peer review</a>
     <a href="#profiles">Profiles</a>
   </nav>
 
@@ -448,7 +461,7 @@
       <div class="pub">
         <span class="authors"><strong>Vich, M.</strong>, and Romero, R. (2020). </span>
         <span class="title">Design of a neural network aimed at predicting meteotsunamis in Ciutadella harbour (Balearic Islands, Spain).</span>
-        <span> EGU General Assembly 2020, Vienna (Austria), 3–8 May, EGU2020-3447. Abstract.</span>
+        <span> EGU General Assembly 2020, EGU2020-3447. Abstract.</span>
       </div>
     </div>
 
@@ -494,7 +507,7 @@
       <div class="pub">
         <span class="authors"><strong>Vich, M.</strong>, Romero, R., Richard, E., Arbogast, P., and Maynard, K. (2011). </span>
         <span class="title">Comparison of three different methods of perturbing the potential vorticity field in mesoscale forecasts of Mediterranean heavy precipitation events.</span>
-        <span> EGU General Assembly 2011, Vienna (Austria), 3–7 April, EGU2011-1322. Abstract.</span>
+        <span> EGU General Assembly 2011, EGU2011-1322. Abstract.</span>
       </div>
       <div class="pub">
         <span class="authors"><strong>Vich, M.</strong>, Romero, R., Richard, E., Arbogast, P., and Maynard, K. (2011). </span>
@@ -527,7 +540,7 @@
       <div class="pub">
         <span class="authors"><strong>Vich, M.</strong>, Romero, R., and Homar, V. (2009). </span>
         <span class="title">Comparison of two perturbed initial and boundary conditions ensemble forecasting systems applied to Mediterranean cyclones.</span>
-        <span> EGU General Assembly 2009, Vienna (Austria), 19–24 April, EGU2009-7242. Abstract.</span>
+        <span> EGU General Assembly 2009, EGU2009-7242. Abstract.</span>
       </div>
     </div>
 
@@ -560,7 +573,7 @@
       <div class="pub">
         <span class="authors"><strong>Vich, M.</strong>, and Romero, R. (2007). </span>
         <span class="title">Potential vorticity error assessment applied to ensemble forecasts of Mediterranean cyclones.</span>
-        <span> EGU General Assembly 2007, Vienna (Austria), 15–20 April, EGU2007-A-04381. Abstract.</span>
+        <span> EGU General Assembly 2007, EGU2007-A-04381. Abstract.</span>
       </div>
       <div class="pub">
         <span class="authors">Amengual, A., Romero, R., <strong>Vich, M.</strong>, and Alonso, S. (2007). </span>
@@ -707,7 +720,7 @@
     </div>
     <div class="item">
       <strong>Maria Antònia Boira</strong> — Alumna col·laboradora (6 ECTS), UIB (2024–25).<br>
-      Work on statistical analysis of snow episodes in Mallorca using CERRA reanalysis, leading to a poster presentation at MetMed 2025 (Toulouse).
+      Statistical analysis of snow episodes in Mallorca using CERRA reanalysis, leading to a poster presentation at MetMed 2025 (Toulouse).
     </div>
     <div class="item">
       <strong>Professional internships (Tutor de Empresa), Meteoclim Services S.L.</strong> — Supervised 2 UIB students (2013–14) and 3 UNED students (2013–15) during applied meteorology internships at the UIB spin-off.
@@ -718,32 +731,88 @@
 
   </section>
 
-  <!-- ── Outreach ── -->
-  <section class="section" id="outreach">
-    <p class="section-label">Outreach &amp; training</p>
+  <!-- ── Research stays ── -->
+  <section class="section" id="stays">
+    <p class="section-label">Research stays</p>
 
     <div class="item">
-      <strong>Xerrada de recerca, Facultat de Ciències (UIB)</strong> — Talk presenting research group activities to undergraduate and master students. March 2026.
+      <strong>Laboratoire d'Aérologie, CNRS / Université Paul Sabatier</strong> — Toulouse, France. 89 days (1 Feb – 1 May 2010).<br>
+      Supervisor: Dr. Evelyne Richard. Development of a PV-perturbation ensemble prediction system using water vapour satellite imagery. Led to <a href="https://doi.org/10.3402/tellusa.v64i0.17224" target="_blank">Vich et al. (2012), Tellus A</a>.
     </div>
+    <div class="item">
+      <strong>National Severe Storms Laboratory (NSSL), NOAA</strong> — Norman, Oklahoma, USA. 96 days (1 Feb – 21 Apr 2008).<br>
+      Supervisor: Dr. Harold Brooks. Ensemble verification techniques for Mediterranean high-impact weather. Led to <a href="https://doi.org/10.1016/j.atmosres.2011.07.017" target="_blank">Vich et al. (2011a)</a> and <a href="https://doi.org/10.1016/j.atmosres.2011.07.016" target="_blank">Vich et al. (2011b)</a>, Atmospheric Research.
+    </div>
+
+  </section>
+
+  <!-- ── Awards & Fellowships ── -->
+  <section class="section" id="awards">
+    <p class="section-label">Awards &amp; fellowships</p>
+
+    <div class="item">
+      <strong>Sexenio de investigación, CNEAI</strong> — Research period 2007–2012 recognised by the Comisión Nacional Evaluadora de la Actividad Investigadora. June 2024.
+    </div>
+    <div class="item">
+      <strong>Torres Quevedo Fellowship</strong> — PTQ-12-05203. Ministerio de Economía y Competitividad / Fondo Social Europeo. Awarded October 2013. Supported R&amp;D leadership at Meteoclim Services S.L. (UIB spin-off), project PROCLIMA.
+    </div>
+    <div class="item">
+      <strong>MED-STORMS Prize for Young Researchers</strong> — CIMA Research Foundation. Awarded at the 12th Plinius Conference on Mediterranean Storms, Corfu (Greece), September 2010.
+    </div>
+    <div class="item">
+      <strong>FPI Predoctoral Fellowship</strong> — BES-2006-14044. Ministerio de Educación y Ciencia. September 2006 – August 2010. Project PRECIOSO (CGL2005-03918), UIB Meteorology Group, supervisor Prof. R. Romero.
+    </div>
+
+  </section>
+
+  <!-- ── Scientific outreach ── -->
+  <section class="section" id="outreach">
+    <p class="section-label">Scientific outreach</p>
+
     <div class="item">
       <strong>Ciència per a Tothom</strong> — Recurring participation in this UIB public science programme (2024, 2025, 2026).
     </div>
     <div class="item">
-      <strong>Python en Acció: Programació per a Estudiants de Ciències</strong> — Co-instructor (8 h), UIB Servei d'Activitats Culturals, September 2024.
+      <strong>Comprender el cambio climático</strong> — Interactive 2-hour workshop for primary school students, "Serás UIB" programme (PortUIB). Editions: 20 Dec 2022, 29 Dec 2022, 26 Nov 2024.
     </div>
     <div class="item">
-      <strong>Comprender el cambio climático</strong> — Interactive 2-hour workshop for primary school students, framed within the "Serás UIB" programme (PortUIB). 20 Dec 2022, 29 Dec 2022, and 26 Nov 2024.
+      <strong>Xerrada de recerca, Facultat de Ciències (UIB)</strong> — Talk on research group activities for undergraduate and master students. March 2026.
     </div>
     <div class="item">
-      <strong>Python i LaTeX: dues grans eines per a la carrera científica</strong> — Instructor (6 h), UIB Facultat de Ciències, October 2023.
-    </div>
-    <div class="item">
-      <strong>Preparació per al Grau: Python aplicat a les Ciències</strong> — Co-instructor (2.5 h), UIB Servei d'Activitats Culturals, September 2021.
-    </div>
-    <div class="item">
-      <strong>6a Feria de la Ciència de les Illes Balears</strong> — Participated in both the Mallorca and Menorca editions (2007).
+      <strong>6a Feria de la Ciència de les Illes Balears</strong> — Participated in the Mallorca and Menorca editions (2007).
     </div>
 
+  </section>
+
+  <!-- ── Training ── -->
+  <section class="section" id="training">
+    <p class="section-label">Training &amp; seminars taught</p>
+
+    <div class="item">
+      <strong>Python en Acció: Programació per a Estudiants de Ciències</strong> — Co-instructor (8 h out of 14 h), UIB Servei d'Activitats Culturals. September 2024.
+    </div>
+    <div class="item">
+      <strong>Python i LaTeX: dues grans eines per a la carrera científica</strong> — Instructor (6 h), UIB Facultat de Ciències. October 2023.
+    </div>
+    <div class="item">
+      <strong>Preparació per al Grau: Python aplicat a les Ciències</strong> — Co-instructor (2.5 h out of 25 h), UIB Servei d'Activitats Culturals. September 2021.
+    </div>
+
+  </section>
+
+  <!-- ── Peer review ── -->
+  <section class="section" id="reviewer">
+    <p class="section-label">Peer review</p>
+    <p class="reviewer-list">
+      Reviewer for seven international journals:
+      <em>Pure and Applied Geophysics</em> (since 2012),
+      <em>Tethys – Journal of Mediterranean Meteorology &amp; Climatology</em> (since 2013),
+      <em>Atmospheric Research</em> (since 2014),
+      <em>Remote Sensing</em> (since 2019),
+      <em>Climate</em> (since 2020),
+      <em>EGUsphere</em> (since 2023),
+      <em>Scientific Reports</em> (since 2026).
+    </p>
   </section>
 
   <!-- ── Profiles ── -->
