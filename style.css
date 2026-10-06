@@ -143,6 +143,27 @@ nav a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
 }
 .about-text a:hover { border-color: var(--accent); }
 
+/* ── Research interests ── */
+.interests-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.93rem;
+  line-height: 1.7;
+  color: var(--ink-light);
+}
+.interests-list li {
+  position: relative;
+  padding-left: 1.1em;
+  margin-bottom: 6px;
+}
+.interests-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--ink-light);
+}
+.interests-list li:last-child { margin-bottom: 0; }
+
 /* ── Publication list ── */
 .year-group { margin-bottom: 40px; }
 .year-group:last-child { margin-bottom: 0; }
